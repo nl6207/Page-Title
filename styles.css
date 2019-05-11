@@ -1,0 +1,18 @@
+body{
+    text-align:center;
+}
+.flex{
+    display:flex;
+    display:inline-block;
+    justify-content:space-around;
+}
+p{
+    margin-top:0px;
+    margin-bottom:0px;
+}
+.options{
+    padding:5px;
+}
+img{ 
+    height:200px;
+}
