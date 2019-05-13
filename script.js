@@ -20,26 +20,36 @@ $(".emo").click(function(){
     if(mood === "tired"){
         appear(tired);
         background("#b2f8ff");
+        underline(".tired");
     } else if(mood === "hungry"){
         appear(hungry);
         background("#ffb24f");
+        underline(".hungry");
     }else if(mood ==="mad"||mood === "annoyed"){
         appear(mad);
         background("#ff0000");
+        underline(".mad");
     } else if (mood === "happy"){
         appear(happy);
         background("#ffcf68");
-    } else if(mood === "in love"){
+        underline(".happy");
+    } else if(mood === "in love"||mood === "love"){
         appear(love);
         background("#ff68a9");
+        underline(".love");
     }else if(mood ==="sad"){
         appear(sad);
         background("#4f98ff");
+        underline(".sad");
     }else if (mood ==="confused"){
         appear(confused);
         background("#e1b5ff");
+        underline(".confused");
     } else{
         $(".span").append("<p class='text'>I don't think that is one of the options. Check your spelling.</p>");
     }
     $(".mood").val("");
 });
+function underline(pick){
+    $(pick).css("text-decoration","underline");
+}
