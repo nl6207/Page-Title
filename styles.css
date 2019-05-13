@@ -1,5 +1,7 @@
 body{
     text-align:center;
+    font-family: 'Akronim', cursive;
+
 }
 .flex{
     display:flex;
@@ -15,4 +17,7 @@ p{
 }
 img{ 
     height:200px;
+}
+.tittle{
+    border:5px black solid;
 }
