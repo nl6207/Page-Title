@@ -5,6 +5,7 @@ var sad = ["https://media.tenor.com/images/056ea81cab18ef0e75aba9e3ecf1d1e2/teno
 var confused = ["https://media1.tenor.com/images/1875abff01d37aaf9414590569336d46/tenor.gif?itemid=13875986","https://media1.tenor.com/images/9aeb41584a55dd28bb839186119a3368/tenor.gif?itemid=12364382","https://media.tenor.com/images/d23a9bf0f508377979abbcf2d3abb9de/tenor.gif"];
 var mad = ["https://media1.tenor.com/images/12b3b5a0fd2ff64136509dea171b1df4/tenor.gif?itemid=11667704","https://media.tenor.com/images/d0b5c3a005299bc843b3699a6ad790c1/tenor.gif","https://media.tenor.com/images/90764c3be7de1331686f8818354a84d9/tenor.gif"];
 var love=["https://media.tenor.com/images/0a1652de311806ce55820a7115993853/tenor.gif","https://media1.tenor.com/images/0feacf1898bd3223fa59a32c1c03d5ca/tenor.gif?itemid=12816949","https://media1.tenor.com/images/3264bcc47ee47ebbdd441f9f1d203542/tenor.gif?itemid=12498539"];
+var sick=["https://media.tenor.com/images/87e19fe8a74d1542a6bc31652e74d854/tenor.gif","https://media.tenor.com/images/58df66d2579cc90060da7e735039349d/tenor.gif","https://media.tenor.com/images/67a4b0fa15c62fc5b580176836358292/tenor.gif"];
 function appear(mood){
     mood.forEach(function(element){
         $(".span").append("<img class='pic' src="+ element +">");
@@ -45,6 +46,10 @@ $(".emo").click(function(){
         appear(confused);
         background("#e1b5ff");
         underline(".confused");
+    } else if(mood==="sick"){
+        appear(sick);
+        background("#81ff6d");
+        underline(".sick");
     } else{
         $(".span").append("<p class='text'>I don't think that is one of the options. Check your spelling.</p>");
     }
